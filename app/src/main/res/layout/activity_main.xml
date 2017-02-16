@@ -84,7 +84,9 @@
             android:layout_gravity="center"
             android:textColor="@color/white"
             android:background="@color/steelblue"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:elevation="21dp"
+            android:id="@+id/boton"/>
 
     </LinearLayout>
 </LinearLayout>
