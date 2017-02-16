@@ -9,6 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@color/black"
     tools:context="com.example.jorge.conversorapp.MainActivity">
 
     <TextView
@@ -39,7 +40,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_weight="1"
-        android:src="@drawable/reinounido"
+        android:src="@drawable/usa"
         android:layout_marginLeft="5dp"
             />
 
@@ -56,8 +57,10 @@
         android:layout_weight="1"
         android:layout_marginRight="5dp"
         android:hint="COP"
+        android:textColorHint="@color/gray"
         android:id="@+id/pesos"
         android:inputType="numberDecimal"
+        android:textColor="@color/white"
         />
 
     <EditText
@@ -65,9 +68,11 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_marginLeft="5dp"
-        android:hint="EUR"
-        android:id="@+id/euros"
-        android:inputType="numberDecimal"/>
+        android:hint="USD"
+        android:textColorHint="@color/gray"
+        android:id="@+id/dolares"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"/>
 
     </LinearLayout>
 

@@ -128,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
                 resultado="";
                 total="";
                 eResultado.setText(resultado.toString());
-
                 break;
 
             case R.id.bRes:
