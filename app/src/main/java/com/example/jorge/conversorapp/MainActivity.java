@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if ( !eDolares.getText().toString().equals("") && !ePesos.getText().toString().equals("") ) {
-                    Toast.makeText(getApplicationContext(),"Por favor digite un valor en sólo uno de los dos campos",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Por favor digite un valor en sólo uo de los dos campos",Toast.LENGTH_SHORT).show();
                 }
             }
 

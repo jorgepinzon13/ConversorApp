@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ConversorApp.iml" filepath="$PROJECT_DIR$/ConversorApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadoraapp/calculadoraapp.iml" filepath="$PROJECT_DIR$/calculadoraapp/calculadoraapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/definitivaapp/definitivaapp.iml" filepath="$PROJECT_DIR$/definitivaapp/definitivaapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/resistenciaapp/resistenciaapp.iml" filepath="$PROJECT_DIR$/resistenciaapp/resistenciaapp.iml" />
     </modules>
   </component>
