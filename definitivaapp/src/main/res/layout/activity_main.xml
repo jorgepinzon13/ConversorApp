@@ -89,8 +89,23 @@
 
     <LinearLayout style="@style/LayoutStyle">
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="calcular nota definitiva"
+            android:background="@color/darkviolet"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:id="@+id/bCalcular"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutStyle">
+
         <TextView style="@style/TextViewStyle"
-            android:text="Nota Definitiva">
+            android:text="Su Nota Definitiva Es">
         </TextView>
 
         <EditText style="@style/EditTextStyle"
