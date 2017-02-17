@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -121,43 +122,86 @@ public class MainActivity extends AppCompatActivity {
 
 
             case R.id.bSum:
-                acum=Double.parseDouble(total);
-                x=1;
-                resultadoprevio=total+"+";
+                if (eResultado.getText().toString().equals("0") && eResultadoPrevio.getText().toString().equals("")){
+                    resultado= "";
+                    total="";
+                    resultadoprevio="";
+                    eResultado.setText(resultado.toString());
+                    eResultadoPrevio.setText(resultado.toString());
+                    Toast.makeText(getApplicationContext(),"Por favor primero indique un número",Toast.LENGTH_SHORT).show();
+
+                }
+                else{
+                acum = Double.parseDouble(total);
+                x = 1;
+                resultadoprevio = total + "+";
                 eResultadoPrevio.setText(resultadoprevio.toString());
-                resultado="";
-                total="";
+                resultado = "";
+                total = "";
                 eResultado.setText(resultado.toString());
+                }
                 break;
 
             case R.id.bRes:
-                acum=Double.parseDouble(total);
-                x=2;
-                resultadoprevio=total+"-";
+                if (eResultado.getText().toString().equals("0") && eResultadoPrevio.getText().toString().equals("")){
+                    resultado= "";
+                    total="";
+                    resultadoprevio="";
+                    eResultado.setText(resultado.toString());
+                    eResultadoPrevio.setText(resultado.toString());
+                    Toast.makeText(getApplicationContext(),"Por favor primero indique un número",Toast.LENGTH_SHORT).show();
+
+                }
+                else{
+                acum = Double.parseDouble(total);
+                x = 2;
+                resultadoprevio = total + "-";
                 eResultadoPrevio.setText(resultadoprevio.toString());
-                resultado="";
-                total="";
+                resultado = "";
+                total = "";
                 eResultado.setText(resultado.toString());
+            }
                 break;
 
             case R.id.bPor:
-                acum=Double.parseDouble(total);
-                x=3;
-                resultadoprevio=total+"x";
+                if (eResultado.getText().toString().equals("0") && eResultadoPrevio.getText().toString().equals("")){
+                    resultado= "";
+                    total="";
+                    resultadoprevio="";
+                    eResultado.setText(resultado.toString());
+                    eResultadoPrevio.setText(resultado.toString());
+                    Toast.makeText(getApplicationContext(),"Por favor primero indique un número",Toast.LENGTH_SHORT).show();
+
+                }
+                else{
+                acum = Double.parseDouble(total);
+                x = 3;
+                resultadoprevio = total + "x";
                 eResultadoPrevio.setText(resultadoprevio.toString());
-                resultado="";
-                total="";
+                resultado = "";
+                total = "";
                 eResultado.setText(resultado.toString());
-                break;
+            }
+            break;
 
             case R.id.bDiv:
-                acum=Double.parseDouble(total);
-                x=4;
-                resultadoprevio=total+"÷";
+                if (eResultado.getText().toString().equals("0") && eResultadoPrevio.getText().toString().equals("")){
+                    resultado= "";
+                    total="";
+                    resultadoprevio="";
+                    eResultado.setText(resultado.toString());
+                    eResultadoPrevio.setText(resultado.toString());
+                    Toast.makeText(getApplicationContext(),"Por favor primero indique un número",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                acum = Double.parseDouble(total);
+                x = 4;
+                resultadoprevio = total + "÷";
                 eResultadoPrevio.setText(resultadoprevio.toString());
-                resultado="";
-                total="";
+                resultado = "";
+                total = "";
                 eResultado.setText(resultado.toString());
+            }
                 break;
 
             case R.id.bPun:

@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+                if ( !eDolares.getText().toString().equals("") && !ePesos.getText().toString().equals("") ) {
+                    Toast.makeText(getApplicationContext(),"Por favor digite un valor en sólo uno de los dos campos",Toast.LENGTH_SHORT).show();
+                }
 
 
                 if (ePesos.getText().toString().equals("")&& !eDolares.getText().toString().equals("")){
@@ -48,9 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Por favor digite un valor a convertir en alguno de los dos campos",Toast.LENGTH_SHORT).show();
                 }
 
-                if ( !eDolares.getText().toString().equals("") && !ePesos.getText().toString().equals("") ) {
-                    Toast.makeText(getApplicationContext(),"Por favor digite un valor en sólo uo de los dos campos",Toast.LENGTH_SHORT).show();
-                }
+
             }
 
         });
