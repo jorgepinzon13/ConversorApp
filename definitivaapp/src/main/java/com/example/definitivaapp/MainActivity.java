@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (!ePractica.getText().toString().equals("") && !eAvance1.getText().toString().equals("") &&!eAvance2.getText().toString().equals("") &&!eAvance3.getText().toString().equals("") &&!eAppfinal.getText().toString().equals("") ) {
+
+                    if (!ePractica.getText().toString().equals("") && !eAvance1.getText().toString().equals("") &&!eAvance2.getText().toString().equals("") &&!eAvance3.getText().toString().equals("") &&!eAppfinal.getText().toString().equals("") ) {
 
                     n1 = Double.parseDouble(ePractica.getText().toString());
                     n2 = Double.parseDouble(eAvance1.getText().toString());
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     ndef= (n1*0.6)+(n2*0.05)+(n3*0.07)+(n4*0.08)+(n5*0.2);
                     eDef.setText(ndef.toString());
                 }
+
 
 
                 if (ndef<=1){
