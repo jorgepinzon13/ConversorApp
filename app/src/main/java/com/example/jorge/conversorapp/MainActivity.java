@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 if (ePesos.getText().toString().equals("")&& !eDolares.getText().toString().equals("")){
                    dolares = Double.parseDouble(eDolares.getText().toString());
                    pesos = dolares * 3000;
-                   ePesos.setText(pesos.toString());
+                   ePesos.setText(String.format("%.2f",pesos));
                 }
 
 
                 if (eDolares.getText().toString().equals("")&& !ePesos.getText().toString().equals("")){
                     pesos = Double.parseDouble(ePesos.getText().toString());
                     dolares = pesos / 3000;
-                    eDolares.setText(dolares.toString());
+                    eDolares.setText(String.format("%.2f",dolares));
                 }
 
                 if ( eDolares.getText().toString().equals("") && ePesos.getText().toString().equals("") ) {

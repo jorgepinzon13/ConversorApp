@@ -90,15 +90,28 @@
     <LinearLayout style="@style/LayoutStyle">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:text="calcular nota definitiva"
             android:background="@color/darkviolet"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textAlignment="center"
-            android:id="@+id/bCalcular"/>
+            android:id="@+id/bCalcular"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/darkblue"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:text="Borrar"
+            android:id="@+id/bBorrar"
+            android:layout_margin="5dp"/>
 
     </LinearLayout>
 
