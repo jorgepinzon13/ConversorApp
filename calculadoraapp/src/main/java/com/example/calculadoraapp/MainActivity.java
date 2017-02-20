@@ -248,7 +248,8 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                total=res.toString();
+//                total=res.toString();
+                total=String.format("%.2f",res);
                 break;
 
 
