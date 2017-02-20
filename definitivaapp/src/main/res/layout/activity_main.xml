@@ -123,7 +123,8 @@
 
         <EditText style="@style/EditTextStyle"
             android:hint="100%"
-            android:id="@+id/eDef">
+            android:id="@+id/eDef"
+            android:focusable="false">
         </EditText>
 
     </LinearLayout>
