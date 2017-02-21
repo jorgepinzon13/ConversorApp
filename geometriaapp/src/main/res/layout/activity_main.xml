@@ -10,132 +10,319 @@
     android:orientation="vertical"
     android:background="@color/black">
 
-    <LinearLayout style="@style/LayoutStyle">
 
-        <ImageView style="@style/ImageViewStyle"
-            android:src="@drawable/circle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        </ImageView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/trian"
+            android:layout_margin="5dp"/>
 
-        <ImageView style="@style/ImageViewStyle"
-            android:src="@drawable/square">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/square"
+            android:layout_margin="5dp"/>
 
-        </ImageView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:layout_margin="5dp"/>
 
-        <ImageView style="@style/ImageViewStyle"
-            android:src="@drawable/triangle">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/cube"
+            android:layout_margin="5dp"/>
 
-        </ImageView>
-
-        <ImageView style="@style/ImageViewStyle"
-            android:src="@drawable/cube">
-
-        </ImageView>
 
     </LinearLayout>
 
-    <LinearLayout style="@style/LayoutStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <RadioGroup
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+            
             <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/rb1"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:buttonTint="@color/blue"
-                android:backgroundTint="@color/black"
-                android:onClick="onRadioButtonClicked" />
+                android:textColor="@color/white"
+                android:text="Triangle"
+                android:textSize="12dp"
+                android:buttonTint="@color/white"
+                android:backgroundTint="@color/blue"
+                android:onClick="Clicked"
+                />
 
             <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/rb2"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:buttonTint="@color/blue"
-                android:backgroundTint="@color/black"
-                android:onClick="onRadioButtonClicked"/>
+                android:textColor="@color/white"
+                android:text="Square"
+                android:textSize="12dp"
+                android:buttonTint="@color/white"
+                android:backgroundTint="@color/blue"
+                android:onClick="Clicked"
+                />
 
             <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/rb3"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:buttonTint="@color/blue"
-                android:backgroundTint="@color/black"
-                android:onClick="onRadioButtonClicked"/>
+                android:textColor="@color/white"
+                android:text="Circle"
+                android:textSize="12dp"
+                android:buttonTint="@color/white"
+                android:backgroundTint="@color/blue"
+                android:onClick="Clicked"
+                />
 
             <RadioButton
-                android:id="@+id/rb4"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:buttonTint="@color/blue"
-                android:backgroundTint="@color/black"
-                android:onClick="onRadioButtonClicked"/>
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rb4"
+                android:textColor="@color/white"
+                android:text="Cube"
+                android:textSize="12dp"
+                android:buttonTint="@color/white"
+                android:backgroundTint="@color/blue"
+                android:onClick="Clicked"
+                />
+
+
+
         </RadioGroup>
 
+
+
+
     </LinearLayout>
 
-    <LinearLayout style="@style/LayoutStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <TextView style="@style/TextViewStyle"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="DIMENSIONES"
-
-            >
-
-
-
-        </TextView>
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Por favor ingrese:"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
 
     </LinearLayout>
 
-    <LinearLayout style="@style/LayoutStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        <TextView style="@style/TextViewStyle"
-            android:text="El perímetro de su figura es =">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/eT1"
+            android:textSize="18dp"
+            />
 
-        </TextView>
-
-        <EditText style="@style/EditTextStyle"
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:hint="m"
-            android:id="@+id/ePer">
-
-        </EditText>
+            android:gravity="center"
+            android:id="@+id/eT1a"
+            android:inputType="numberDecimal"
+            />
 
     </LinearLayout>
 
-    <LinearLayout style="@style/LayoutStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        <TextView style="@style/TextViewStyle"
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/eT2"
+            android:textSize="18dp"
+            />
 
-            android:text="El área de su figura es =">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="m"
+            android:gravity="center"
+            android:id="@+id/eT2a"
+            android:inputType="numberDecimal"
+            />
 
-        </TextView>
+    </LinearLayout>
 
-        <EditText style="@style/EditTextStyle"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Calcular"
+            android:id="@+id/bCalc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Borrar"
+            android:id="@+id/bBorr"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="Su perímetro es:"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="m"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:background="@color/gray"
+            android:focusable="false"
+            android:id="@+id/ePerimetro"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:text="Su área es:"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:hint="m2"
-            android:id="@+id/eAre">
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:background="@color/gray"
+            android:focusable="false"
+            android:id="@+id/eArea"/>
 
-        </EditText>
 
     </LinearLayout>
 
-    <LinearLayout style="@style/LayoutStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <TextView style="@style/TextViewStyle"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="Su volumen es:"
+            android:textColor="@color/white"
+            />
 
-            android:text="El volumen de su figura es =">
-
-        </TextView>
-
-        <EditText style="@style/EditTextStyle"
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:hint="m3"
-            android:id="@+id/eVol">
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:focusable="false"
+            android:background="@color/gray"
+            android:id="@+id/eVolumen"/>
 
-        </EditText>
 
     </LinearLayout>
 

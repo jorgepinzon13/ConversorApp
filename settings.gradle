@@ -1,1 +1,1 @@
-include ':app', ':resistenciaapp', ':calculadoraapp', ':definitivaapp'
+include ':app', ':resistenciaapp', ':calculadoraapp', ':definitivaapp', ':geometriaapp'
