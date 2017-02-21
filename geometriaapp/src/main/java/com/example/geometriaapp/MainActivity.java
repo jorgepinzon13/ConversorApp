@@ -6,13 +6,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText eT1,eT1a,eT2,eT2a,ePerimetro,eArea,eVolumen;
     RadioButton rb1,rb2,rb3,rb4;
     Button bCalc,bBorr;
-
     String a,b;
 
     Double d1,d2,per,area,vol;
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         bCalc=(Button)findViewById(R.id.bCalc);
         bBorr=(Button)findViewById(R.id.bBorr);
+
 
         a="";
         b="";
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 eT1.setText(a);
                 eT2.setText(b);
 
-                 x=1;
+                x=1;
 
                 break;
 
