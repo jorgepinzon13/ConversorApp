@@ -448,11 +448,14 @@
             android:layout_height="0dp"
             android:layout_weight="10">
 
-            <RadioButton />
+            <RadioButton
+                android:clickable="false"/>
 
-            <RadioButton />
+            <RadioButton
+                android:clickable="false"/>
 
-            <RadioButton />
+            <RadioButton
+                android:clickable="false"/>
 
 
             <RadioButton
@@ -465,7 +468,9 @@
                 android:layout_margin="0.8dp"
                 android:onClick="Clicked"
                 android:id="@+id/rb41"/>
-            <RadioButton />
+
+            <RadioButton
+                android:clickable="false"/>
 
 
             <RadioButton
@@ -478,7 +483,9 @@
                 android:layout_margin="0.8dp"
                 android:onClick="Clicked"
                 android:id="@+id/rb42"/>
-            <RadioButton />
+
+            <RadioButton
+                android:clickable="false"/>
 
 
             <RadioButton
@@ -492,7 +499,8 @@
                 android:onClick="Clicked"
                 android:id="@+id/rb43"/>
 
-            <RadioButton />
+            <RadioButton
+                android:clickable="false"/>
 
         </RadioGroup>
 

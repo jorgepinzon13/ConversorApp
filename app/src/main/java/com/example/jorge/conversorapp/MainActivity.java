@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText ePesos,eDolares;
-    Button bConvertir;
+    Button bConvertir,bBorrar;
 
     Double pesos, dolares;
 
@@ -22,7 +22,20 @@ public class MainActivity extends AppCompatActivity {
         ePesos = (EditText) findViewById(R.id.pesos);
         eDolares = (EditText) findViewById(R.id.dolares);
         bConvertir = (Button) findViewById(R.id.boton);
+        bBorrar = (Button) findViewById(R.id.bBorrar);
 
+
+        bBorrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pesos=0.0;
+                dolares=0.0;
+                ePesos.setText("");
+                eDolares.setText("");
+
+
+            }
+        });
 
         bConvertir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,14 +49,17 @@ public class MainActivity extends AppCompatActivity {
                 if (ePesos.getText().toString().equals("")&& !eDolares.getText().toString().equals("")){
                    dolares = Double.parseDouble(eDolares.getText().toString());
                    pesos = dolares * 3000;
-                   ePesos.setText(String.format("%.2f",pesos));
+                   ePesos.setText(String.format("%.2f",pesos)+" COP");
+                   eDolares.setText(String.format("%.2f",dolares)+" USD");
                 }
 
 
                 if (eDolares.getText().toString().equals("")&& !ePesos.getText().toString().equals("")){
                     pesos = Double.parseDouble(ePesos.getText().toString());
                     dolares = pesos / 3000;
-                    eDolares.setText(String.format("%.2f",dolares));
+                    eDolares.setText(String.format("%.2f",dolares)+" USD");
+                    ePesos.setText(String.format("%.2f",pesos)+" COP");
+
                 }
 
                 if ( eDolares.getText().toString().equals("") && ePesos.getText().toString().equals("") ) {
