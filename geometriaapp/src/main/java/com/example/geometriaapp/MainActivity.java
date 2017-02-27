@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     Double d1,d2,per,area,vol;
 
-    int x=0;
+    int x=0,y=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,50 +49,51 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (rb1.isChecked()==false && rb2.isChecked()==false && rb3.isChecked()==false && rb4.isChecked()==false){
+                if (y==0){
 
-                    Toast.makeText(getApplicationContext(),"Por favor digite un valor en sólo uno de los dos campos",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Por favor complete los campos",Toast.LENGTH_SHORT).show();
 
-
-                }
-
-                if (x==1){
-
-                            d1 = Double.parseDouble(eT1a.getText().toString());
-                            d2 = Double.parseDouble(eT2a.getText().toString());
-                            per = d1 + d2 + (Math.sqrt((Math.pow(d1, 2)) + (Math.pow(d2, 2))));
-                            area = (d1 * d2) / 2;
-                            vol = 0.0;
 
                 }
+                else {
 
-                if (x==2){
+                    if (x == 1) {
+
+                        d1 = Double.parseDouble(eT1a.getText().toString());
+                        d2 = Double.parseDouble(eT2a.getText().toString());
+                        per = d1 + d2 + (Math.sqrt((Math.pow(d1, 2)) + (Math.pow(d2, 2))));
+                        area = (d1 * d2) / 2;
+                        vol = 0.0;
+
+                    }
+
+                    if (x == 2) {
 
                         d1 = Double.parseDouble(eT1a.getText().toString());
                         per = d1 * 4;
                         area = Math.pow(d1, 2);
                         vol = 0.0;
 
-                }
+                    }
 
-                if (x==3){
+                    if (x == 3) {
 
                         d1 = Double.parseDouble(eT1a.getText().toString());
                         per = 2 * (Math.PI) * d1;
                         area = (Math.pow(d1, 2)) * (Math.PI);
                         vol = 0.0;
 
-                }
+                    }
 
-                if (x==4){
+                    if (x == 4) {
 
                         d1 = Double.parseDouble(eT1a.getText().toString());
                         per = 12 * d1;
                         area = 6 * (Math.pow(d1, 2));
                         vol = Math.pow(d1, 3);
 
+                    }
                 }
-
 
 
                 ePerimetro.setText(String.format("%.2f",per)+" m");
@@ -107,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                x=0;
+                y=0;
                 per=0.0;
                 area=0.0;
                 vol=0.0;
@@ -145,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                 b="La altura";
                 eT1.setText(a);
                 eT2.setText(b);
-
+                y=1;
                 x=1;
 
                 break;
@@ -158,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 eT2.setFocusableInTouchMode(false);
                 eT2a.setBackgroundColor(000000);
                 eT2a.setFocusableInTouchMode(false);
-
+                y=1;
                 x=2;
 
                 break;
@@ -171,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                 eT2.setFocusableInTouchMode(false);
                 eT2a.setBackgroundColor(000000);
                 eT2a.setFocusableInTouchMode(false);
-
+                y=1;
                 x=3;
 
                 break;
@@ -184,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
                 eT2.setFocusableInTouchMode(false);
                 eT2a.setBackgroundColor(000000);
                 eT2a.setFocusableInTouchMode(false);
-
+                y=1;
                 x=4;
 
                 break;
